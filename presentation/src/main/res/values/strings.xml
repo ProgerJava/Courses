@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Courses</string>
+    //Activity
+    <string name="mainScreen">Главная</string>
+    <string name="favouriteScreen">Избранное</string>
+    <string name="accountScreen">Аккаунт</string>
+    //Splash
+    <string name="headerSplash">Тысячи курсов \nв одном месте</string>
+    <string name="continueText">Продолжить</string>
+    <string name="enter">Вход</string>
+    //SignIn
+    <string name="email">Email</string>
+    <string name="password">Пароль</string>
+    <string name="enterEmail">Введите имеил</string>
+    <string name="enterPassword">Введите пароль</string>
+    <string name="capEmail">example@gmail.com</string>
+    <string name="noAccount">Нету аккаунта? ###Регитрация###</string>
+    <string name="forgerPassword">Забыл пароль</string>
+    //Main
+    <string name="searchCourses">Search courses…</string>
+    <string name="sortByDate">По дате добавления</string>
+    <string name="markExample">4.9</string>
+    <string name="dateExample">22 Мая 2024</string>
+    <string name="nameOfCourseExample">Java-разработчик с нуля</string>
+    <string name="descOfCourseExample">Освойте backend-разработку и программирование на Java, фреймворки Spring и Maven, работу с базами данных и API. Создайте свой собственный проект, собрав портфолио и став востребованным специалистом для любой IT компании.</string>
+    <string name="priceExample">999 ₽</string>
+    <string name="more">Подробнее</string>
+
+
+</resources>

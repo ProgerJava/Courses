@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="titleText" format="reference|string"/>
+    <attr name="hintText" format="reference|string"/>
+    <attr name="image" format="reference"/>
+
+    <declare-styleable name="TitleView">
+        <attr name="titleText"/>
+    </declare-styleable>
+
+    <declare-styleable name="ButtonView">
+        <attr name="titleText"/>
+    </declare-styleable>
+
+    <declare-styleable name="EditableFormView">
+        <attr name="titleText"/>
+        <attr name="hintText"/>
+    </declare-styleable>
+
+    <declare-styleable name="ItemNavigationBarView">
+        <attr name="titleText"/>
+        <attr name="image"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextImageView">
+        <attr name="titleText"/>
+        <attr name="image"/>
+    </declare-styleable>
+
+</resources>

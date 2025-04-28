@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/back_r16"
+    android:backgroundTint="@color/darkGray"
+    android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:id="@+id/linearWithMainImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:background="@drawable/back_r12_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageMain"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mock_ic_for_item" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearWithRightImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/back_r20"
+        android:backgroundTint="@color/glass"
+        android:padding="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearWithMainImage"
+        app:layout_constraintTop_toTopOf="@+id/linearWithMainImage">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/rightImage"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:srcCompat="@drawable/ic_favourite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearWithMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_r12"
+        android:backgroundTint="@color/glass"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearWithMainImage"
+        app:layout_constraintStart_toStartOf="@+id/linearWithMainImage">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            app:srcCompat="@drawable/ic_star_fill" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mark"
+            style="@style/LabelTextRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineHeight="14dp"
+            android:textSize="12sp"
+            tools:text="@string/markExample" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/back_r12"
+        android:backgroundTint="@color/glass"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearWithMainImage"
+        app:layout_constraintStart_toEndOf="@+id/linearWithMark">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date"
+            style="@style/LabelTextRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineHeight="14dp"
+            android:textSize="12sp"
+            tools:text="@string/dateExample" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/nameOfCourse"
+        style="@style/CommonText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearWithMainImage"
+        tools:text="@string/nameOfCourseExample" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/descOfCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto"
+        android:lineHeight="16dp"
+        android:maxLines="2"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/appWhite"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfCourse"
+        tools:text="@string/descOfCourseExample" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/price"
+        style="@style/CommonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descOfCourse"
+        tools:text="@string/priceExample" />
+
+    <com.olejnikov.testovoe.mylibrary.presentation.ui.view.common.TextImageView
+        android:id="@+id/checkMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        app:image="@drawable/ic_arrow_right_short_fill"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descOfCourse"
+        app:titleText="@string/more" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

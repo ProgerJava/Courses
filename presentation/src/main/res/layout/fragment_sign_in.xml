@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    tools:context=".ui.fragment.signIn.SignInFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.olejnikov.testovoe.mylibrary.presentation.ui.view.common.TitleView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="100dp"
+            app:titleText="@string/enter" />
+
+        <com.olejnikov.testovoe.mylibrary.presentation.ui.view.signIn.EditableFormView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            app:hintText="@string/enterEmail"
+            app:titleText="@string/email" />
+
+        <com.olejnikov.testovoe.mylibrary.presentation.ui.view.signIn.EditableFormView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:hintText="@string/enterPassword"
+            app:titleText="@string/password" />
+
+        <com.olejnikov.testovoe.mylibrary.presentation.ui.view.common.ButtonView
+            android:id="@+id/buttonEnter"
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:titleText="@string/enter" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/noAccount"
+            style="@style/ActionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            tools:text="@string/noAccount" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forgetPassword"
+            style="@style/ActionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/forgerPassword"
+            android:textColor="@color/appGreen" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            android:background="@color/backDivider" />
+
+        <com.olejnikov.testovoe.mylibrary.presentation.ui.view.signIn.SocialNetworkView
+            android:id="@+id/socialNetworkCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

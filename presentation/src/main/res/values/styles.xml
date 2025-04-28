@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextTitle">
+        <item name="android:textSize">28sp</item>
+        <item name="lineHeight">36dp</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/appWhite</item>
+    </style>
+
+    <style name="LabelTextMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">20dp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/appWhite</item>
+    </style>
+
+    <style name="LabelTextRegular">
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">20dp</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/appWhite</item>
+    </style>
+
+    <style name="LabelTextBold">
+        <item name="android:textSize">12sp</item>
+        <item name="lineHeight">16dp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/appWhite</item>
+    </style>
+
+    <style name="CommonText">
+        <item name="android:textSize">16sp</item>
+        <item name="lineHeight">18dp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/appWhite</item>
+    </style>
+
+    <style name="ActionText">
+        <item name="android:textSize">12sp</item>
+        <item name="lineHeight">15dp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/appWhite</item>
+    </style>
+
+</resources>
